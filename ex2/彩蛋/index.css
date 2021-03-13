@@ -7,7 +7,7 @@ body,html{
 }
 .container{
     width: 1000px;
-    height: 600px;
+    height: 550px;
     background: white;
     position: relative;
     left: 50%;
@@ -32,6 +32,7 @@ body,html{
 .img img{
     width:300px ;
     height: 300px;
+    border:12px solid rgba(50,28,13,0.85);
     border-radius: 50%;
     position: relative;
     left: 50%;
@@ -47,6 +48,9 @@ body,html{
 }
 ul{
     list-style: none;
+}
+ul>li{
+    margin-bottom: 5px;
 }
 .user-input{
     margin-top: 30px;
