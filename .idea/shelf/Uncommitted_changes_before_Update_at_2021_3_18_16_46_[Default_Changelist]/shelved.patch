@@ -1,0 +1,72 @@
+Index: css3-background-empty/css3-background-empty.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/css3-background-empty/css3-background-empty.html b/css3-background-empty/css3-background-empty.html
+new file mode 100644
+--- /dev/null	(date 1489400603000)
++++ b/css3-background-empty/css3-background-empty.html	(date 1489400603000)
+@@ -0,0 +1,21 @@
++<!DOCTYPE html>
++<html>
++<head>
++	<meta charset="utf-8">
++	<meta http-equiv="X-UA-Compatible" content="IE=edge">
++	<title>CSS3 Background</title>
++	<link rel="stylesheet" href="css3-background-empty.css">
++	
++</head>
++<body>
++	<h1 class="bg_1">
++		<p>Hello</p>
++	</h1>
++	<div class="bg_2">
++		<div class="bg_2_inside">World</div>
++	</div>
++	<h1 class="bg_3">
++		<p>Zjvivi</p>
++	</h1>
++</body>
++</html>
+\ No newline at end of file
+Index: css3-background-empty/css3-background-empty.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/css3-background-empty/css3-background-empty.css b/css3-background-empty/css3-background-empty.css
+new file mode 100644
+--- /dev/null	(date 1489400673000)
++++ b/css3-background-empty/css3-background-empty.css	(date 1489400673000)
+@@ -0,0 +1,29 @@
++/*公共部分*/
++p{
++	padding:0;
++	margin:0;
++}
++h1 p{
++	width:100%;
++}
++h1,div.bg_2{
++	width:50%;
++	margin:20px auto;
++	height:200px;
++	text-align: center;
++	box-sizing:border-box;
++}
++/*用于垂直居中*/
++h1 p:before, div.bg_2_inside:before{
++	content:" ";
++	display:inline-block;
++	height:100%;
++	vertical-align: middle;
++
++}
++
++h1 p, div.bg_2 .bg_2_inside{
++	display:inline-block;
++	vertical-align: middle;
++	height:100%;
++}
+\ No newline at end of file

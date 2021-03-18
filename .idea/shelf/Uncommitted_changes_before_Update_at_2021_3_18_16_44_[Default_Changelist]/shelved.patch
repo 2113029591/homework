@@ -1,0 +1,56 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"1a5e49cf-0f8c-47b0-94af-9b46a5a66c54\" name=\"Default Changelist\" comment=\"第二次作业完成\">\r\n      <change afterPath=\"$PROJECT_DIR$/ex2/彩蛋/img.png\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ex1/.idea/codeStyles/codeStyleConfig.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ex2/.idea/codeStyles/codeStyleConfig.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ex1/.idea/encodings.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ex2/.idea/encodings.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ex1/.idea/ex1.iml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ex2/.idea/ex1.iml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ex1/.idea/modules.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ex2/.idea/modules.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ex1/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ex2/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ex1/咖啡屋/css/index.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ex2/咖啡屋/css/index.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ex1/咖啡屋/images/cat.jpg\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ex2/咖啡屋/images/cat.jpg\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ex1/咖啡屋/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ex2/咖啡屋/index.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ex1/彩蛋/img.png\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ex1/彩蛋/index.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ex2/彩蛋/index.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ex1/彩蛋/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ex2/彩蛋/index.html\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1pgcD3sleMvc1KuxKmw68ExNFHi\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/ex1/彩蛋\" />\r\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\r\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\r\n    <property name=\"node.js.path.for.package.eslint\" value=\"project\" />\r\n    <property name=\"node.js.path.for.package.tslint\" value=\"project\" />\r\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\r\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\r\n    <property name=\"nodejs_interpreter_path.stuck_in_default_project\" value=\"undefined stuck path\" />\r\n    <property name=\"nodejs_npm_path_reset_for_default_project\" value=\"true\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Mr.zhang\\Desktop\\homework\\ex1\\彩蛋\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Mr.zhang\\Desktop\\homework\\ex1\\彩蛋\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"1a5e49cf-0f8c-47b0-94af-9b46a5a66c54\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1615608050165</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1615608050165</updated>\r\n      <workItem from=\"1615608051252\" duration=\"4202000\" />\r\n      <workItem from=\"1615643045622\" duration=\"604000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"第二次作业完成\">\r\n      <created>1615615210576</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1615615210576</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"第二次作业完成\">\r\n      <created>1615643056252</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1615643056252</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"第二次作业完成\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"第二次作业完成\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision cdb118b9548541a9d87c43c44ab91457522e27b9)
++++ b/.idea/workspace.xml	(date 1615646365625)
+@@ -2,19 +2,8 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="1a5e49cf-0f8c-47b0-94af-9b46a5a66c54" name="Default Changelist" comment="第二次作业完成">
+-      <change afterPath="$PROJECT_DIR$/ex2/彩蛋/img.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ex1/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ex2/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ex1/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ex2/.idea/encodings.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ex1/.idea/ex1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ex2/.idea/ex1.iml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ex1/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ex2/.idea/modules.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ex1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ex2/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ex1/咖啡屋/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/ex2/咖啡屋/css/index.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ex1/咖啡屋/images/cat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/ex2/咖啡屋/images/cat.jpg" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ex1/咖啡屋/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ex2/咖啡屋/index.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ex1/彩蛋/img.png" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ex1/彩蛋/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/ex2/彩蛋/index.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ex1/彩蛋/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ex2/彩蛋/index.html" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -70,6 +59,8 @@
+       <updated>1615608050165</updated>
+       <workItem from="1615608051252" duration="4202000" />
+       <workItem from="1615643045622" duration="604000" />
++      <workItem from="1615645019024" duration="62000" />
++      <workItem from="1615645745704" duration="620000" />
+     </task>
+     <task id="LOCAL-00001" summary="第二次作业完成">
+       <created>1615615210576</created>
+@@ -85,7 +76,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1615643056252</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="第二次作业完成">
++      <created>1615645039772</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1615645039772</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
