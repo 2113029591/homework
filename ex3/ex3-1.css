@@ -1,0 +1,67 @@
+/*公共部分*/
+p{
+	padding:0;
+	margin:0;
+}
+h1 p{
+	width:100%;
+}
+h1.bg_1{
+	border:30px solid rgba(0,0,0,0.7);
+	background-clip: padding-box;
+	background-image: url("bg.jpg");
+	padding:40px;
+}
+h1 p,.bg_2 .bg_2_inside{
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+h1,div.bg_2{
+	width:50%;
+	margin:20px auto;
+	height:200px;
+	text-align: center;
+	box-sizing:border-box;
+}
+.bg_2{
+	background: linear-gradient(to left,rgb(107,182,40) 0%,#ffc 50%,
+	rgb(107,182,40) 100%) no-repeat;
+	border-radius: 50px 10px 50px 10px;
+	box-shadow: 5px 5px 8px #eee;
+}
+.bg_2_inside{
+	width: 100%;
+	padding: 20px;
+	background-clip: content-box;
+	background-image: url("bg.jpg");
+	box-sizing: border-box;
+	font-size: 60px;
+	font-variant: small-caps;
+	text-shadow: 3px 3px 5px #333;
+}
+/*用于垂直居中*/
+h1 p:before, div.bg_2_inside:before{
+	content:" ";
+	display:inline-block;
+	height:100%;
+	vertical-align: middle;
+
+}
+
+h1 p, div.bg_2 .bg_2_inside{
+	display:inline-block;
+	vertical-align: middle;
+	height:100%;
+}
+
+h1.bg_3{
+	background-clip: border-box;
+	background-image: url("bg.jpg");
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: -5px -5px 5px #ddd,5px 5px 5px #ddd;
+}
+h1.bg_3 p{
+	background: #fff;
+}
