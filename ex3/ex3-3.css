@@ -1,14 +1,13 @@
 *{
     /*改变width计算为包含边框和内间距*/
+    margin: 0;
     box-sizing:border-box;
 }
 body{
     background: #ffc;
     color:#300;
-
     /*设置em基准字号*/
     font-size:14px;
-
     /*控制页面内容水平和垂直居中*/
     position:absolute;
     width:100%;
@@ -16,5 +15,121 @@ body{
     display:flex;
     align-items:center;
     justify-content:center;
-
+}
+header,footer{
+    background: #ccaa66;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    border: 2px solid black;
+}
+nav{
+    background: #E8D882;
+}
+nav ul{
+    list-style: none;
+}
+main{
+    background: #f1e8b0;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+@media all and (min-width: 768px){
+    .container{
+        width: 800px;
+        height: 500px;
+        overflow: hidden;
+    }
+    header{
+        height: 100px;
+        text-align: center;
+        border-bottom: 2px solid black;
+    }
+    header h1{
+        line-height: 100px;
+    }
+    main{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        border-bottom:2px solid black;;
+    }
+    nav{
+        width:150px;
+        display: flex;
+        justify-content: center;
+        border-right: 2px solid black;
+    }
+    nav ul{
+        margin-top: 20px;
+        padding: 0;
+        width: 50px;
+        height: 100px;
+        list-style: none;
+    }
+    nav ul>li{
+        margin-bottom: 20px;
+    }
+    nav ul>li>a{
+        text-decoration: none;
+    }
+    section{
+        width:400px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    section ul{
+        margin-bottom: 20px;
+    }
+    section p{
+        margin-bottom: 10px;
+    }
+    aside{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer p{
+        margin-bottom: 10px;
+    }
+}
+@media all  and (max-width: 767px){
+    .container{
+        width: 300px;
+    }
+    header{
+        border-bottom: 2px solid black;
+        text-align: center;
+    }
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+        border-bottom:2px solid black ;
+    }
+    nav{
+        border-top: 2px solid black;
+    }
+    section p{
+        margin-bottom: 10px;
+    }
+    aside{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        text-align: center;
+    }
 }
