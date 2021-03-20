@@ -16,6 +16,12 @@ body{
     align-items:center;
     justify-content:center;
 }
+nav ul{
+    padding: 0;
+    width: 50px;
+    height: 100px;
+    list-style: none;
+}
 header,footer{
     background: #ccaa66;
 }
@@ -120,6 +126,11 @@ img{
     }
     nav{
         border-top: 2px solid black;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul>li{
+        margin-bottom: 5px;
     }
     section p{
         margin-bottom: 10px;
