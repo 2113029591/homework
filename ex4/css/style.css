@@ -1,0 +1,23 @@
+
+@media all and (min-width:993px) {
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    .flex{
+        border: 1px solid lightgray;
+    }
+}
+@media all and (max-width: 992px){
+    img{
+        height: 200px;
+        width: 200px;
+    }
+    .flex{
+        display: flex;
+        justify-content: center;
+        border: 1px solid lightgray;
+        margin-top:10px ;
+        padding: 2px 0px 2px 0px;
+    }
+}

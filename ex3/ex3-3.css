@@ -111,7 +111,7 @@ img{
         margin-bottom: 10px;
     }
 }
-@media all  and (max-width: 767px){
+@media all and (max-width: 767px){
     .container{
         width: 300px;
     }

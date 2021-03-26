@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="267328f1-575b-4d84-a0de-1eb7bbfbd9a8" name="Default Changelist" comment="3.18">
+    <list default="true" id="267328f1-575b-4d84-a0de-1eb7bbfbd9a8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ex4/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex4/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex4/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex4/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex4/js/jquery.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_18_16_44__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_18_16_44__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_18_16_46__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_18_16_46__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_18_16_47__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_18_16_47__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_18_16_47__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ex3/ex3-3.css" beforeDir="false" afterPath="$PROJECT_DIR$/ex3/ex3-3.css" afterDir="false" />
     </list>
@@ -17,7 +25,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -35,8 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ex4/js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -48,38 +54,29 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Mr.zhang\Desktop\大二下\web程序设计\homework\ex3" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\T-BAO\Desktop\大二下\web程序设计\homework\ex2\咖啡屋\images" />
+      <recent name="C:\Users\T-BAO\Desktop\大二下\web程序设计\homework\ex3" />
       <recent name="C:\Users\Mr.zhang\Desktop\homework\ex1\彩蛋" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\T-BAO\Desktop\大二下\web程序设计\homework\ex4\js" />
+      <recent name="C:\Users\T-BAO\Desktop\大二下\web程序设计\homework\ex4\css" />
+      <recent name="C:\Users\T-BAO\Desktop\大二下\web程序设计\homework\ex3" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1a5e49cf-0f8c-47b0-94af-9b46a5a66c54" name="Default Changelist" comment="" />
+      <changelist id="267328f1-575b-4d84-a0de-1eb7bbfbd9a8" name="Default Changelist" comment="" />
       <created>1615608050165</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615608050165</updated>
       <workItem from="1615608051252" duration="4155000" />
+      <workItem from="1616667828501" duration="13000" />
+      <workItem from="1616742185230" duration="5541000" />
     </task>
-    <task id="LOCAL-00001" summary="3.18">
-      <created>1616058087309</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1616058087309</updated>
-    </task>
-    <task id="LOCAL-00002" summary="3.18">
-      <created>1616060090306</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1616060090306</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,8 +94,14 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="3.18" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.18" />
+  <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1616667838558">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1616667838558" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1616746045619">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1616746045619" />
   </component>
 </project>
