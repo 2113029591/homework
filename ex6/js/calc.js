@@ -13,7 +13,25 @@
 注意：以下代码仅是示例
 */
 
+
+var numStr1;
+var numStr2=1;
+//加减法计算
+var totalNum=0;
+//计算加减
+var totalAddOrReduction=0;
+//乘除法计算
+var totalMultiplyOrSubtract=1.0;
+
+var flagReduction=false;
+var flagMultiplyOrSubtract=false
+var flagAddOrReduction=false
+
 $(".calc-num").click(function (){
+    if($("#disp").text()=="+" ||$("#disp").text()=="-"
+        ||$("#disp").text()=="×" ||$("#disp").text()=="÷"){
+        $("#disp").text("")
+    }
     console.log($(this).text());
     var str=$("#disp").text()+$(this).text();
     $("#disp").text(str);
@@ -31,9 +49,73 @@ $(".calc-btn").click(function (){
                 $("#disp").text(strDisp.substr(1,strDisp.length-1));
             else
                 $("#disp").text("-"+$("#disp").text());
-    }
-})
+            break;
+        case "%":
+            let tempStr=$("#disp").text();
+            tempStr=parseFloat(tempStr)/100;
+            $("#disp").text(tempStr);
+            break;
+        case "+":
+            flagReduction=false;
+            flagAddOrReduction=true
+            if(flagMultiplyOrSubtract){
+                totalNum+=totalMultiplyOrSubtract;
+                totalMultiplyOrSubtract=0;
+                flagMultiplyOrSubtract=false;
+            }
+            numStr1=$("#disp").text();
+            $("#disp").text("");
+            $("#disp").text("+");
+            totalAddOrReduction+=parseFloat(numStr1);
+            break;
+        case "-":
+            flagReduction=true;
+            flagAddOrReduction=true
+            if(flagMultiplyOrSubtract){
+                totalNum+=totalMultiplyOrSubtract;
+                totalMultiplyOrSubtract=0;
+                flagMultiplyOrSubtract=false;
+            }
+            numStr1=$("#disp").text();
+            $("#disp").text("");
+            $("#disp").text("-");
+            totalAddOrReduction-=parseFloat(numStr1);
+            break;
+        case "×":
+            flagMultiplyOrSubtract=true;
+            if(flagAddOrReduction){
+                totalNum+=totalAddOrReduction;
+                totalAddOrReduction=0;
+                flagAddOrReduction=false;
+            }
+            numStr1=$("#disp").text();
+            $("#disp").text("×");
+            totalMultiplyOrSubtract*=parseFloat(numStr1);
+            break;
+        case "=":
+            numStr1=$("#disp").text();
+            if(flagAddOrReduction){
+                if(flagReduction)
+                    numStr1="-"+numStr1;
+                totalNum+=totalAddOrReduction+parseFloat(numStr1);
+                totalAddOrReduction=0;
+                flagAddOrReduction=false;
+            }
+            if(flagMultiplyOrSubtract){
+                totalNum+=totalMultiplyOrSubtract*parseFloat(numStr1);
+                totalMultiplyOrSubtract=0;
+                flagMultiplyOrSubtract=false;
+            }
+            $("#disp").text(totalNum);
+            totalNum=0;
+            totalMultiplyOrSubtract=1;
+            totalAddOrReduction=0;
+            break;
 
+
+
+    }
+});
 
 
 
