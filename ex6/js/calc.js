@@ -14,20 +14,19 @@
 */
 
 
-var numStr1;
-var numStr2=1;
-//加减法计算
-var totalNum=0;
-//计算加减
-var totalAddOrReduction=0;
-//乘除法计算
-var totalMultiplyOrSubtract=1.0;
+var num1=null;
+var num2=null;
+var isFinish=false;
 
-var flagReduction=false;
-var flagMultiplyOrSubtract=false
-var flagAddOrReduction=false
-
+//解决当输出完成后正负号转换  将变换的数看作是一个新的输入数
+var flagFinish=false;
+var flagDoing=false;
+var oper;
 $(".calc-num").click(function (){
+    if($("#disp").text().length==18){
+        alert("已到达最大长度，无法再输入数字")
+        return 0;
+    }
     if($("#disp").text()=="+" ||$("#disp").text()=="-"
         ||$("#disp").text()=="×" ||$("#disp").text()=="÷"){
         $("#disp").text("")
@@ -38,87 +37,170 @@ $(".calc-num").click(function (){
 })
 
 $(".calc-btn").click(function (){
+    isFinish=false
     let str=$(this).text();
     let strDisp=$("#disp").text();
+
     switch (str){
         case "AC":
+            if(flagDoing)
+                num2=null
+            //    输出结果后清空看作重新一个新的处理
+            else if(flagFinish){
+                num1=null
+                num2=null
+            }
             $("#disp").text("");
-            break;
-        case "+/-":
-            if(strDisp.substr(0,1)=="-")
-                $("#disp").text(strDisp.substr(1,strDisp.length-1));
-            else
-                $("#disp").text("-"+$("#disp").text());
             break;
         case "%":
-            let tempStr=$("#disp").text();
-            tempStr=parseFloat(tempStr)/100;
-            $("#disp").text(tempStr);
+            $("#disp").text(eval(strDisp+"/"+"100"));
+            if(flagDoing==false && flagFinish){
+                num1=$("#disp").text();
+            }
+            break;
+        case "+/-":
+            //解决开头是零的情况  012
+            strDisp=String(parseFloat(strDisp))
+            $("#disp").text(strDisp);
+            if(strDisp.substr(0,1)=="-")
+                $("#disp").text(strDisp.substr(1,strDisp.length-1));
+            else if(parseFloat(strDisp)!=0)
+                $("#disp").text("-"+$("#disp").text());
+            if(flagDoing==false && flagFinish){
+                num1=$("#disp").text();
+            }
             break;
         case "+":
-            flagReduction=false;
-            flagAddOrReduction=true
-            if(flagMultiplyOrSubtract){
-                totalNum+=totalMultiplyOrSubtract;
-                totalMultiplyOrSubtract=0;
-                flagMultiplyOrSubtract=false;
+            flagDoing=true
+            oper="+"
+            if(num1!=null && num2!=null){
+                num1=eval(num1+oper+num2)
+                num2=null
+                console.log(num2)
+                $("#disp").text("+");
             }
-            numStr1=$("#disp").text();
-            $("#disp").text("");
-            $("#disp").text("+");
-            totalAddOrReduction+=parseFloat(numStr1);
+            else{
+                if(num1==null){
+                    num1=$("#disp").text()
+                }
+                else{
+                    num2=$("#disp").text()
+
+                    isDivide0();
+                    if(isFinish)
+                        return 0;
+
+                    if(num2=="+")
+                        num2=null
+                }
+                $("#disp").text("+");
+            }
             break;
         case "-":
-            flagReduction=true;
-            flagAddOrReduction=true
-            if(flagMultiplyOrSubtract){
-                totalNum+=totalMultiplyOrSubtract;
-                totalMultiplyOrSubtract=0;
-                flagMultiplyOrSubtract=false;
+            flagDoing=true
+            oper="-"
+            if(num1!=null && num2!=null){
+                num1=eval(num1+oper+num2)
+                num2=null
+                console.log(num2)
+                $("#disp").text("+");
             }
-            numStr1=$("#disp").text();
-            $("#disp").text("");
-            $("#disp").text("-");
-            totalAddOrReduction-=parseFloat(numStr1);
+            else{
+                if(num1==null){
+                    num1=$("#disp").text()
+                }
+                else{
+                    num2=$("#disp").text()
+                    isDivide0();
+                    if(isFinish)
+                        return 0;
+                    if(num2=="-")
+                        num2=null
+                }
+                $("#disp").text("-");
+            }
             break;
         case "×":
-            flagMultiplyOrSubtract=true;
-            if(flagAddOrReduction){
-                totalNum+=totalAddOrReduction;
-                totalAddOrReduction=0;
-                flagAddOrReduction=false;
+            flagDoing=true
+            oper="*"
+            if(num1!=null && num2!=null){
+                num1=eval(num1+oper+num2)
+                num2=null
+                console.log(num2)
+                $("#disp").text("×");
             }
-            numStr1=$("#disp").text();
-            $("#disp").text("×");
-            totalMultiplyOrSubtract*=parseFloat(numStr1);
+            else{
+                if(num1==null){
+                    num1=$("#disp").text()
+                }
+                else{
+                    num2=$("#disp").text()
+                    isDivide0();
+                    if(isFinish)
+                        return 0;
+                    if(num2=="×")
+                        num2=null
+                }
+                $("#disp").text("×");
+            }
+            break;
+        case "÷":
+            flagDoing=true
+            oper="/"
+            if(num1!=null && num2!=null){
+                num1=eval(num1+oper+num2)
+                num2=null
+                console.log(num2)
+                $("#disp").text("÷");
+            }
+            else{
+                if(num1==null){
+                    num1=$("#disp").text()
+                }
+                else{
+                    num2=$("#disp").text()
+                    if(num2=="+")
+                        num2=null
+                }
+                $("#disp").text("÷");
+            }
             break;
         case "=":
-            numStr1=$("#disp").text();
-            if(flagAddOrReduction){
-                if(flagReduction)
-                    numStr1="-"+numStr1;
-                totalNum+=totalAddOrReduction+parseFloat(numStr1);
-                totalAddOrReduction=0;
-                flagAddOrReduction=false;
+
+            if(num1==null){
+                num1=$("#disp").text()
             }
-            if(flagMultiplyOrSubtract){
-                totalNum+=totalMultiplyOrSubtract*parseFloat(numStr1);
-                totalMultiplyOrSubtract=0;
-                flagMultiplyOrSubtract=false;
+            else{
+                num2=$("#disp").text()
+                //1
+
+                isDivide0();
+                if(isFinish)
+                    return 0;
+                if(num2=="=")
+                    num2=null
             }
-            $("#disp").text(totalNum);
-            totalNum=0;
-            totalMultiplyOrSubtract=1;
-            totalAddOrReduction=0;
+
+            if(num1!=null && num2!=null){
+                num1=eval(num1+oper+num2)
+                num2=null
+            }
+            $("#disp").text(num1)
+            flagDoing=false
+            flagFinish=true
             break;
-
-
-
     }
 });
 
 
-
+function isDivide0(){
+    if(oper=="/" && num2=="0"){
+        alert("除数不能为0，请重新输入数字")
+        num2=null;
+        $("#disp").text("")
+        isFinish=true
+    }
+}
 
 
 
