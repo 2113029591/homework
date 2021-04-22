@@ -14,7 +14,6 @@ else{
 var isShow=false
 function getJson(){
     $.getJSON("../data.json",function(resp){
-        console.log("aaaa")
         
         let str=""
         $(".list").append("<ul></ul>")
